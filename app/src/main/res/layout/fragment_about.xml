@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentAbout">
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@id/textview_desc_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+    <TextView
+        android:id="@+id/textview_desc_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App By: 2301859650 - Cornelius Tantius"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textFontWeight="400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+    <TextView
+        android:id="@+id/textview_desc_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="github.com/corneliustantius"
+        android:textSize="20dp"
+        android:textFontWeight="100"
+        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_desc_1"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_desc_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
