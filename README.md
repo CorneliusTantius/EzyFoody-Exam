@@ -21,19 +21,19 @@ Couple core components utilized in this project are:
 ## Preview
 <table>
   <tr>
-    <td><img alt="" src="/preview/1.png"></td>
-    <td><img alt="" src="/preview/2.png"></td>
+    <td><img alt="" src="/preview/1.jpg"></td>
+    <td><img alt="" src="/preview/2.jpg"></td>
   </tr>
   <tr>
-    <td><img alt="" src="/preview/3.png"></td>
-    <td><img alt="" src="/preview/4.png"></td>
+    <td><img alt="" src="/preview/3.jpg"></td>
+    <td><img alt="" src="/preview/4.jpg"></td>
   </tr>
   <tr>
-    <td><img alt="" src="/preview/5.png"></td>
-    <td><img alt="" src="/preview/6.png"></td>
+    <td><img alt="" src="/preview/5.jpg"></td>
+    <td><img alt="" src="/preview/6.jpg"></td>
   </tr>
   <tr>
-    <td><img alt="" src="/preview/7.png"></td>
-    <td><img alt="" src="/preview/8.png"></td>
+    <td><img alt="" src="/preview/7.jpg"></td>
+    <td><img alt="" src="/preview/8.jpg"></td>
   </tr>
 </table>
