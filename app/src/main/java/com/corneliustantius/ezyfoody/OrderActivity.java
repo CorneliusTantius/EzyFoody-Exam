@@ -27,13 +27,12 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityOrderBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.textviewSecond.setText("Order Food");
         Intent intent = getIntent();
 
         String productId = intent.getStringExtra(AdapterProduct.EXTRA_PID);
         String productName = intent.getStringExtra(AdapterProduct.EXTRA_PN);
         Integer id = Integer.parseInt(productId);
-
+        binding.textviewSecond.setText("Order " + productName);
 
         binding.buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +56,14 @@ public class OrderActivity extends AppCompatActivity {
                     Integer cartEntryId = arr[1];
                     databaseHelper.updateCartItem(db, cartEntryId, currQty);
                 }
-                Toast.makeText(v.getContext(), "Added " + productName + " to cart!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "Added " + intIn.toString() + " " + productName + " to cart!", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), "Cancel adding " + productName + " to cart!", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });
